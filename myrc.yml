@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name:  myvertexapp-rc
+spec:
+   replicas: 2
+   selector: 
+     app:  myvertexapp
+     version: 2.6.2
+   template:                                     
+     metadata:
+       labels:
+          app:  myvertexapp
+          version: 2.6.2
+     spec:
+        containers:
+        - name:  myvertexapp-container
+          image: nbktechnosys/myverteximage10mar23:1
+          ports:
+          - containerPort: 8080 
