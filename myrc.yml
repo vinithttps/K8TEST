@@ -15,6 +15,6 @@ spec:
      spec:
         containers:
         - name:  myvertexapp-container
-          image: vinithttps/mywarimage10march2023
+          image: vinithttps/mywarimage16march23
           ports:
           - containerPort: 8080 
