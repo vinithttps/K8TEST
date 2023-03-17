@@ -16,6 +16,6 @@ spec:
      spec:
        containers:
         - name: myvertexapp-container
-          image:  vinithttps/warbbimage17m23:1
+          image:  vinithttps/waraaimage17m23:1
           ports:
             - containerPort: 8080
