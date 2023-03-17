@@ -5,7 +5,7 @@ metadata:
   labels:
     app: myvertexapp
 spec:
-  replicas: 3
+  replicas: 2
   selector:
       matchLabels:
          app: myvertexapp
@@ -16,6 +16,6 @@ spec:
      spec:
        containers:
         - name: myvertexapp-container
-          image:  vinithttps/mywarimage10march2023
+          image:  vinithttps/warbbimage17m23:1
           ports:
             - containerPort: 8080
